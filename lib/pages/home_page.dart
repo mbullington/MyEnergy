@@ -251,13 +251,6 @@ class _HomePage extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
           backgroundColor: ThemeColors.background,
-          title: Padding(
-              padding: EdgeInsets.only(top: 12.0),
-              child: SizedBox(
-                  width: 36.0,
-                  height: 36.0,
-                  child: DecoratedBox(
-                      decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/logo.png")))))),
           textTheme: getTextTheme(),
           centerTitle: true,
           elevation: 0.0,
@@ -271,7 +264,7 @@ class _HomePage extends State<HomePage> {
             ScrollGlueWidgetList(widgets: <Widget>[
               Padding(
                   padding: EdgeInsets.all(16.0),
-                  child: Align(alignment: Alignment.center, child: Text("My Dominion", style: display)))
+                  child: Align(alignment: Alignment.center, child: Text("My Energy", style: display)))
             ]),
             SliverStickyHeader(
                 header: Header(title: "My Bill"),
